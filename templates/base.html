@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>First flask</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+   <h1>Привет, мир</h1>
+   <p>Это сообщение от файла html</p>
+
+   <form action="/add" method="post">
+        <input type="text" name="new_task" placeholder="Введите задачу" required>
+        <button type="submit">Добавить</button>
+    </form>
+
+    <div>
+        <h2>Мои задачи</h2>
+        <ul>
+            {% for task in task %}
+                <li>
+                    {{ task[1]}}
+                    <a href="/delete/{{ task[0] }}">❌</a>
+                </li>
+            {% else %}
+                <li>Нет задач</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
