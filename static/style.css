@@ -1,15 +1,19 @@
 body{
     font-family: sans-serif;
-    max-width: 600px;
+    max-width: 650px;
     margin: 40px auto;
     padding: 0 20px;
-    background: #f9f9f9;
-    color: #333;
+    background: #36304400;
+    background-color: #76797a;
+    color: #5c5b5b;
     }
 
 h1{
-    color: #76797a;
+    color: #61b5d1;
     text-align: center;
+}
+h2{
+    color: #61b5d1;
 }
 
 p{
@@ -29,7 +33,7 @@ input[type="text"]{
 
 button{
     padding: 10px 20px;
-    background-color: #057e37;
+    background-color: #4770c9;
     color: white;
     border: none;
     cursor: pointer;
@@ -44,7 +48,7 @@ ul{
 li{
     padding: 10px;
     margin: 5px 0;
-    background: white;
+    background: rgb(182, 173, 173);
     display: flex;
     justify-content: space-between;
     border-left: 5px solid #2196F3;
